@@ -17,6 +17,7 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{subcaption}
+\usepackage{nameref}
 %\usepackage{times}
 %\usepackage{helvet}
 %\usepackage{bookman}
@@ -27,7 +28,7 @@
 %%\usepackage[hypertex]{hyperref}
 %% end personal packages
 
-\newcommand{\captionfont}{\footnotesize}
+%\newcommand{\captionfont}{\footnotesize}
 
 \graphicspath{{images/}{./images}}
 \usetikzlibrary{calc}
@@ -245,35 +246,34 @@ NSA provides long-term high-quality in-situ and remote-sensing observations for 
 %\hspace{-2em}
 Daily sea ice concentration (SIC) is primarily obtained from satellite retrievals provided by the University of Bremen [1], the following analysis is performed to couple sea ice conditions with cloud observations above NSA:
 
-\colouredcircle SIC AMSR2 products is analyzed for a sector 50~km around the NSA site.\\
-\begin{minipage}{0.9\textwidth}
+\colouredcircle SIC AMSR2 products is analyzed for a sector 50~km around the NSA site (red star in Fig.~\ref{fig:sic_wind}).\\
+\begin{minipage}{0.95\textwidth}
 	\setcaptiontype{figure}
 	\centering
 	\subfloat{\includegraphics[width=.7\linewidth]{1411_NSA_SIC_wdir_2019-03-23.png}}
-	\caption{\small SIC (see colorbar) and wind direction at maximum water vapour transport (see red wind barb). Only SIC from those directions are considered.}
-	%\begin{center}
-	%	\includegraphics[width=.7\linewidth]{1411_NSA_SIC_wdir_2019-03-23.png}\\
-	%	\emph{\small SIC (see colorbar) and wind direction at maximum water vapour transport (see red wind barb). Only SIC from those directions are considered.}
-	%\end{center}
+	\caption{\small SIC (see colorbar) and wind direction at maximum water vapour transport (red barb indicates NSA location). Only SIC from those directions are considered.}
+	\label{fig:sic_wind}
 \end{minipage}
 
-\colouredcircle Sea ice - atmosphere coupling model\\
-Gradient of water vapour transport ($\nabla_z WVT$) is calculated from humidity and radiosonde wind profiles. The direction of maximum transport (see grey lines in figure above) is used to relate SIC with zenith observations at NSA.
+\colouredcircle Sea ice - atmosphere coupling conceptual model\\
+Gradient of water vapour transport ($\nabla_z WVT$) is calculated from humidity and radiosonde wind profiles. The direction of maximum transport (see grey lines in Fig.~\ref{fig:sic_wind}) is used to relate SIC with zenith observations at NSA.
 \begin{minipage}{0.9\textwidth}
-	\begin{center}
-		\includegraphics[width=.6\linewidth]{drawing_lead_cloud.png}\\
-		\emph{\small Conceptual model for sea ice interaction with clouds.}
-	\end{center}
+	\setcaptiontype{figure}
+	\centering
+	\subfloat{\includegraphics[width=.6\linewidth]{drawing_lead_cloud.png}}
+	\caption{\small Schematic for sea ice interaction with observed clouds.}
+	\label{fig:leadcloud}
 \end{minipage}
 
 The virtual potential temperature $\theta_v$ is analyzed to classify cases where the WVT is coupled or decoupled to the cloud.
 
 \colouredcircle Cloud observation classification:\\
 \begin{minipage}{0.9\textwidth}
-\begin{center}
-	\includegraphics[width=0.6\linewidth]{images/coupling_no_coupling}\\
-	\emph{\small Coupling / decoupling classification based on $\theta_v$ and location of maximum water vapour transport.}
-\end{center}	
+	\setcaptiontype{figure}
+	\centering
+	\subfloat{\includegraphics[width=0.6\linewidth]{images/coupling_no_coupling}}
+	\caption{\small Coupling / decoupling classification based on $\theta_v$ and location of maximum water vapour transport.}
+	\label{fig:cop-dec}
 \end{minipage}
 
 
@@ -285,9 +285,9 @@ with $SST$ being sea surface temperature (assumed as 271.34~K), SIC from $0\dots
 \[
 	T_s = \Big[ \frac{F_{lw}^{\downarrow} - (1-\varepsilon_s)F_{lw}^{\uparrow}}{\varepsilon_s~\sigma} \Big]^{\frac{1}{4}}
 \]
-being $F_{lw}^{\downarrow}$ and $F_{lw}^{\uparrow}$ down- and up-welling longwave fluxes measured at NSA. The surface emissivity $\varepsilon_s$ is considered 0.981 $\pm$ 5\%, which is a standard value for winter. \\
+being $F_{lw}^{\downarrow}$ and $F_{lw}^{\uparrow}$ down- and up-welling longwave fluxes measured at NSA. The surface LW emissivity $\varepsilon_s$ is considered 0.981 $\pm$ 5\% to cover characteristic NSA winter values.\\
  
-{\large The results are sorted based on the cloud-sea ice coupled/decoupled conditions. Statistics of LW net surface radiation and cloud radiative effects (CRE) are show in Section 3.}
+{The results are sorted based on the cloud-sea ice coupled/decoupled conditions. Statistics of LW net surface radiation and cloud radiative effects (CRE) are show in Section 3.}
 
 } % end of box
 
