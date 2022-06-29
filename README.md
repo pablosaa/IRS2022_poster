@@ -1,6 +1,6 @@
 # IRS2022_poster
 
-Poster for my contribution to the [International Radiation Symposium 2022](https://irs2022.org), session 6 "Radiation Budget and Forcing"
+Poster for my contribution to the [International Radiation Symposium 2022](https://irs2022.org), session 6 "Radiation Budget and Forcing", contribution number 488, scheduled for Thursday 7th July.
 
 Using LaTeX class baposter.cls as alternative for a format complaint to the official University of Leipzig Poster layout.
 
