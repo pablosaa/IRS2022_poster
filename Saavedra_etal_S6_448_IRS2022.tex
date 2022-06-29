@@ -16,7 +16,7 @@
 
 \usepackage{graphicx}
 \usepackage{multicol}
-\usepackage{wrapfig}
+\usepackage{subcaption}
 %\usepackage{times}
 %\usepackage{helvet}
 %\usepackage{bookman}
@@ -237,7 +237,7 @@ The study focuses on the Western Arctic to address the following research questi
 	\includegraphics[scale=0.55]{NSA_SIC_100km.png}	
 \end{tabular*}
 \\
-NSA provides long-term high-quality in-situ and remote-sensing observations for clouds and radiation. This study is centered on the Arctic winters from 2012 to 2020.	
+NSA provides long-term high-quality in-situ and remote-sensing observations for clouds and radiation. To exclude solar shortwave radiative effects this study is centered on the Arctic winters (November to March) from 2012 to 2020. 	
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{2.- Coupling Sea Ice and Clouds}{name=retmethods,column=0,below=objective}{
@@ -247,10 +247,14 @@ Daily sea ice concentration (SIC) is primarily obtained from satellite retrieval
 
 \colouredcircle SIC AMSR2 products is analyzed for a sector 50~km around the NSA site.\\
 \begin{minipage}{0.9\textwidth}
-	\begin{center}
-		\includegraphics[width=.7\linewidth]{1411_NSA_SIC_wdir_2019-03-23.png}\\
-		\emph{\small SIC (see colorbar) and wind direction at maximum water vapour transport (see red wind barb). Only SIC from those directions are considered.}
-	\end{center}
+	\setcaptiontype{figure}
+	\centering
+	\subfloat{\includegraphics[width=.7\linewidth]{1411_NSA_SIC_wdir_2019-03-23.png}}
+	\caption{\small SIC (see colorbar) and wind direction at maximum water vapour transport (see red wind barb). Only SIC from those directions are considered.}
+	%\begin{center}
+	%	\includegraphics[width=.7\linewidth]{1411_NSA_SIC_wdir_2019-03-23.png}\\
+	%	\emph{\small SIC (see colorbar) and wind direction at maximum water vapour transport (see red wind barb). Only SIC from those directions are considered.}
+	%\end{center}
 \end{minipage}
 
 \colouredcircle Sea ice - atmosphere coupling model\\
