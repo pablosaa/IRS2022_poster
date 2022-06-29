@@ -164,7 +164,7 @@
   % Format of text header
   eyecatcher=true,
   headerborder=none, %open, %none,
-  headerheight=0.12\textheight,
+  headerheight=0.15\textheight,
   %textfont=\sc, %An example of changing the text font
   headershape=rounded, %smallrounded,
   headershade=shadeLR,
@@ -185,12 +185,13 @@
     %\end{tabular}   
   }
   % Title
-  {\color{black}Estimation of winter cloud radiative effects coupled\\to sea ice in the Western Arctic}
+  {\color{black}Estimation of cloud radiative effects from ground-based observations in the Western Arctic\\
+  {\vspace{0.4em}\LARGE Wintertime radiative effects as function of cloud-moisture-coupling\\ and sea ice conditions}}
   % Authors
-  {\vspace{+1em} \underline{Pablo Saavedra Garfias}$^1$, and Kerstin Ebell$^{2}$, and Heike Kalesse-Los$^1$\\
+  {\vspace{+1em} \underline{Pablo Saavedra Garfias}$^{1,*}$, and Kerstin Ebell$^{2}$, and Heike Kalesse-Los$^1$\\
     $^1$University of Leipzig, Institute for Meteorology, Faculty of Physics and Geosciences, Germany\\
-	$^2$University of Cologne, Institute of Geophysics and Meteorology, Germany\\
-	Contact: \url{pablo.saavedra@uni-leipzig.de}
+	$^2$University of Cologne, Institute of Geophysics and Meteorology, Germany
+	%Contact: \url{pablo.saavedra@uni-leipzig.de}
     %% {\color{blue} \url{www2.meteo.uni-bonn.de/admirari}}
     }
   % University logo
@@ -403,78 +404,3 @@ So far only simulation of clear-sky for longwave downwelling radiation have been
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\headerbox{6. References}{name=ref,column=4,above=bottom,span=1}{%
-%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	\begin{tabular}{@{}l||c@{}}
-%		\hspace{-1.2em}
-%		\begin{minipage}{0.35\linewidth}
-%			%\vspace{-9em}
-%			{Virtual Observations (VO) are needed to test Data Assimilation schemes. In that sense, synthetic observations alike SMAP/SMOS satellites have been generated. For that task, satellite features like orbit, antenna pattern, foot-print, incidence angle have been taking into account.}\\
-%			%{\color{yellow} The statistics comprise of pixels within the Neckar catchment D4 after antenna pattern and real-orbit considerations. TOP PANEL: descending-orbit; BOTTOM PANEL: ascending-orbit.}
-%			\vspace{-1.5em}
-%			\begin{center}
-%				%\includegraphics[width=.45\linewidth,height=115px]{img_lwc_10:30.png} &
-%				\includegraphics[width=.5\linewidth]{AntennaPattern.png}
-%			\end{center}
-%			The above antenna pattern is a proxy for SMAP specifications, with a 3dB FWHM FOV of 2.4° and footprint of 36km. The pattern is applied to the high-resolution D4 simulations and SMAP Passive L2C\_TB\_PA synthetic data is generated.
-%		\end{minipage}
-%		%\vspace{-4em}
-%		&
-%		\begin{minipage}{0.6\linewidth}
-%			\vspace{-0.1em}
-%			\begin{center}
-%				The synthetic observations are rendered according to the EASE-grid corresponding for the D4 catchment geo-locations i.e. 36km grid a like SMAP L2 data.\\
-%				%     \hspace{-5em}
-%				\includegraphics[scale=.5]{TBHcube_CLM_SAT.png}\\
-%				{\color{red} SMAP virtual observations:} in the above figure the bottom-plane corresponds to TB high-res (206x234), while the top-plane the TB at EASE-grid D4 resolution (6x6). 
-%				
-%				%\includegraphics[width=.95\linewidth]{cmem_smosDA_BoxP2013.png}
-%				%      \\
-%				%      {\vspace{-2px} \sc \small
-%				%      The Optical thicknesses retrieved from. 
-%				%      }
-%			\end{center}
-%			%\vspace{8cm}
-%		\end{minipage}
-%	\end{tabular}\\
-%	\begin{minipage}{0.98\linewidth}
-%		\vspace{+0.2em}
-%		\centering
-%		\includegraphics[width=0.85\linewidth,height=7cm]{summer_TBclmSmap_ts.png}
-%	\end{minipage}
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\headerbox{7. Soil Moisture Bias in CLM}{name=clmbias,column=2,below=cmemout,span=2}{%
-%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	\begin{tabular}{@{}c||c@{}}
-%		\begin{minipage}{0.5\linewidth}
-%			%\vspace{-9em}
-%			{CLM shows large values for soil moisture, which leads to huge bias on TB. CDF matching method used to correct SM with real SMAP retrievals as reference (left plot). To understand the effects on TB by decreasing SM, various factors $\eta$ has been used to fit a curve (rigth plot)}\\
-%			\vspace{-1.2em}
-%			\begin{center}
-%				\includegraphics[width=.48\linewidth]{cdfSM_clm_smap.png} \hspace{0.01cm}
-%				\includegraphics[width=.49\linewidth]{deltaTB_fSM.png}
-%			\end{center}
-%			It has been found that CLM soil moisture values are in average 45\% ($\eta$=0.55) higher than SMAP retrievals for 1 year comparison. Then the factor $\eta$ is used to calibrate soil moisture to input the forward operator.
-%		\end{minipage}
-%		&
-%		\begin{minipage}{0.44\linewidth}
-%			{After calibration for Soil Moisture, the TB bias is partially reduced but not completely: The following plots are biases in a pixel-to-pixel comparison from VR and SMAP data after an average catchment bias is subtracted. The color of the EASE-grid pixel indicates residual bias and the value inside every circle is its respective ubRMSE.}\\
-%			\vspace{-.2em}
-%			\begin{center}
-%				\includegraphics[width=.495\linewidth]{DIFF_TBH_VRD4_SMAP.png}\hspace{0.01cm}
-%				\includegraphics[width=.495\linewidth]{DIFF_TBV_VRD4_SMAP.png}
-%			\end{center}
-%		\end{minipage}\\
-%		\hline
-%	\end{tabular}\\
-%	
-%	\begin{minipage}{0.95\linewidth}
-%		\vspace{+.7em}
-%		{\color{green} CONCLUSIONS:} 
-%		It has been found that Bayesian inversion is able to more accurately reproduce the profiles vertical structure in contrast to the firmware retrieval methods. This is primary true for the case of humidity and temperature profiles.
-%		%Moreover cases of synergy with a wind profiler are applied to the Bayesian scheme producing a consistent temperature, humidity and lower atmosphere wind shears simultaneously.
-%		
-%		The presented methodology for ground-based atmospheric profiling produces results resembling observations by radiosondes when a suitable a-priori dataset is used. Moreover the open source tools needed to produce the a-priori dataset for the Bayesian inversion is available on to be used by the scientific community.
-%	\end{minipage}
-%}
