@@ -286,7 +286,7 @@ with $SST$ being sea surface temperature (assumed as 271.34~K), SIC from $0\dots
 \[
 	T_s = \Big[ \frac{F_{lw}^{\downarrow} - (1-\varepsilon_s)F_{lw}^{\uparrow}}{\varepsilon_s~\sigma} \Big]^{\frac{1}{4}}
 \]
-being $F_{lw}^{\downarrow}$ and $F_{lw}^{\uparrow}$ down- and up-welling measured LW fluxes. The surface LW emissivity $\varepsilon_s$ is assumed 0.981$\pm$5\% to cover characteristic NSA winter values.
+being $F_{lw}^{\downarrow}$ and $F_{lw}^{\uparrow}$ down- and up-welling measured LW fluxes~[\ref{bib:thakur2022}, \ref{bib:ebell2020}]. The surface LW emissivity $\varepsilon_s$ is assumed 0.981$\pm$5\% to cover characteristic NSA winter values~[\ref{bib:shupe2015}, \ref{bib:dolinar2016}].
 \begin{equation}
 	\Delta T~=~T_{skin}(sic, T_s)~-~T_{2m}
 	\label{eq:deltaT}
@@ -340,7 +340,7 @@ Here $\Delta T$ in Eq.~\ref{eq:deltaT} is used as proxy for SIC dependent sensib
 	\caption{[a] PDF for CRE ($F_{lw}^\downarrow$ cloudy - clear sky) shows a more frequent occurrence for cases when the clouds are coupled. [b] CRT estimated from clear-sky LW ($LW_c$), fractional sky cover ($LW_c$), indicating that warmer clouds are more frequent for coupled cases. [c] LW net radiation as a function of observed ice water path (IWP), where coupled $F_{lw}^{net}$ slightly decreasing when IWP approaches zero, contrasting to LWP where $F_{lw}^{net}$ drops strongly.}
 \end{minipage}
 
-CRE is calculated based on cloudy observations and corresponding clear-sky simulations following Brutsaert (1975) and Long and Turner (2008) for longwave downwelling radiation. Clear sky calculation is a state-of-the-art value added product from ARM.
+CRE is calculated based on cloudy observations and corresponding clear-sky simulations following [\ref{bib:bruts1975}] and [\ref{bib:long2008}] for longwave downwelling radiation. Clear sky calculation is a state-of-the-art value added product from ARM~[\ref{bib:riihimaki2019}].
    
 %\parbox[l]{0.8\linewidth}{   \vspace{-.5em}
 %	{Some text here....}    
@@ -352,7 +352,7 @@ CRE is calculated based on cloudy observations and corresponding clear-sky simul
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {Ground-based radiation observations at the ARM site at the North Slope of Alaska (NSA) have been analyzed for the period of winters 2012 to 2020. The data has been classified into sea ice - cloud coupled/ decoupled cases. The results are consistent with previous findings regarding the effect of low sea ice concentration (e.g., due to the presence of leads or polynyas) on cloud micro- and macro-physical properties. Cloud properties like liquid and ice water path (LWP and IWP), cloud base height, and cloud geometrical thickness are also variables strongly influencing the surface radiation budget. Our results depict that a warming cloud effect on the surface is clearly enhanced by atmospheric thermodynamic and dynamic conditions which are coupled with the sea ice situation downwind.
 
-So far only simulation of clear-sky for longwave downwelling radiation have been considered, in the future we will include complete clear-sky simulations following Kebell et al. (2020) for the central Arctic site Ny~Alesund, thus a better picture on CRE will be achieved.
+So far only simulation of clear-sky for longwave downwelling radiation have been considered, in the future we will include complete clear-sky simulations following~[\ref{bib:ebell2020}] for the central Arctic site Ny~Alesund, thus a better picture on CRE will be achieved.
 }
 
 % \sc (this make cool big font)!
@@ -367,19 +367,14 @@ So far only simulation of clear-sky for longwave downwelling radiation have been
 \begin{minipage}{0.99\linewidth}
 {\scriptsize
 	\begin{enumerate}
-		\item Shupe, M. D. et al. "Deriving Arctic Cloud Microphysics at Barrow, Alaska: Algorithms, Results, and Radiative Closure". J. Appl. Met. and Clim. 54, 1675–1689 (2015).
-		\item Ebell, K., et al. "Radiative Effect of Clouds at Ny-Ålesund, Svalbard, as Inferred from Ground-Based Remote Sensing Observations". J. Appl. Met. and Clim. 59, 3–22 (2020).
-		\item Thakur, G., Schymanski, S. J., Mallick, K., Trebs, I. & Sulis, M. Downwelling longwave radiation and sensible heat flux observations are critical for surface temperature and emissivity estimation from flux tower data. Sci Rep 12, 8592 (2022).
-		\item Brutsaert, W. "On a derivable formula for longwave radiation from clear skies". Water Res. Resch. 11(3): 742-744 (1975)
-		\item Long, CN. and Turner, DD. "A method for continuous estimation of clear sky downwelling longwave flux developed using ARM surface measurements". J. Geo. Res. Atmos. 113(D18): D18206. (2008)
-		\item Riihimaki, L. D., Gaustad, et al. "Radiative Flux Analysis (RADFLUXANAL) Value-Added Product: Retrieval of Clear-Sky Broadband Radiative Fluxes and Other Derived Values". DOE/SC-ARM-TR-228, 1569477 (2019) doi:10.2172/1569477.
+		\item \label{bib:shupe2015}Shupe, M. D. et al. "Deriving Arctic Cloud Microphysics at Barrow, Alaska: Algorithms, Results, and Radiative Closure". J. Appl. Met. and Clim. 54, 1675–1689 (2015).
+		\item \label{bib:ebell2020}Ebell, K., et al. "Radiative Effect of Clouds at Ny-Ålesund, Svalbard, as Inferred from Ground-Based Remote Sensing Observations". J. Appl. Met. and Clim. 59, 3–22 (2020).
+		\item \label{bib:thakur2022}Thakur, G., Schymanski, S. J., Mallick, K., Trebs, I. & Sulis, M. Downwelling longwave radiation and sensible heat flux observations are critical for surface temperature and emissivity estimation from flux tower data. Sci Rep 12, 8592 (2022).
+		\item \label{bib:bruts1975}Brutsaert, W. "On a derivable formula for longwave radiation from clear skies". Water Res. Resch. 11(3): 742-744 (1975)
+		\item \label{bib:long2008}Long, CN. and Turner, DD. "A method for continuous estimation of clear sky downwelling longwave flux developed using ARM surface measurements". J. Geo. Res. Atmos. 113(D18): D18206. (2008)
+		\item \label{bib:riihimaki2019}Riihimaki, L. D., Gaustad, et al. "Radiative Flux Analysis (RADFLUXANAL) Value-Added Product: Retrieval of Clear-Sky Broadband Radiative Fluxes and Other Derived Values". DOE/SC-ARM-TR-228, 1569477 (2019) doi:10.2172/1569477.
+		\item \label{bib:dolinar2016}Dolinar, E. K., et al. "A clear-sky radiation closure study using a one-dimensional radiative transfer model and collocated satellite-surface-reanalysis data sets". J. Geophys. Res. Atmos. 121, 13,698-13,714 (2016).
 		
-		\item Inverse Methods for Atmospheric Sounding. Rodgers C.D. 2015. https://doi.org/10.1142/3171.
-		\item \vspace{-0.6em} Bayesian Analysis in Inverse Problems, Fitzpatrick B.G. 1991. Inverse Problems 7, 675-702.
-		\item \vspace{-0.6em} Instrument Operation \& Software guide, Issure 01/09, 2014. Radiometer Physics GmbH.
-		\item \vspace{-0.6em} Wyoming Radiosonde Download Toolbox: https://github.com/pablosaa/WyoSonde
-		\item \vspace{-0.6em} HATPRO Toolbox: https://github.com/pablosaa/HATPRO-DABINIO
-		\item \vspace{-0.6em} Bayes Retrieval Toolbox: https://github.com/pablosaa/TroposProf
 	\end{enumerate}
 }	
 \vspace{-0.6em}
