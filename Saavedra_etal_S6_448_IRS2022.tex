@@ -229,16 +229,16 @@ The study focuses on the Western Arctic to address the following research questi
 	\item In which way does the coupling/decoupling of clouds to moisture-layer impact the cloud's properties?
 \end{itemize}
 
-\begin{tabular*}{0.99\textwidth}[h!]{lc}
-	\begin{minipage}{0.45\textwidth}
-		\vspace{-3em}
-	The Atmospheric Radiation Measurement’s (ARM) North Slope of Alaska (NSA) site (71.23$^\circ$ North, 156.61$^\circ$ West) in Utqiagvik, Alaska.
+\begin{tabular*}{0.99\textwidth}[h!]{lr}
+	\begin{minipage}{0.5\textwidth}
+		\vspace{-4em}
+	{\small The Atmospheric Radiation Measurement’s (ARM) North Slope of Alaska (NSA) site (71.23$^\circ$ North, 156.61$^\circ$ West) in Utqiagvik, Alaska.}
 	\end{minipage}
 	&
-	\includegraphics[scale=0.55]{NSA_SIC_100km.png}	
+	\includegraphics[scale=0.5]{NSA_SIC_100km.png}	
 \end{tabular*}
 \\
-NSA provides long-term high-quality in-situ and remote-sensing observations for clouds and radiation. To exclude solar shortwave radiative effects this study is centered on the Arctic winters (November to March) from 2012 to 2020. 	
+NSA provides long-term high-quality observations for clouds and radiation. To exclude solar shortwave radiative effects this study is centered on Arctic winters (Nov. to Mar.) from 2012 to 2020. 	
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{2.- Coupling Sea Ice and Clouds}{name=retmethods,column=0,below=objective}{
@@ -272,27 +272,31 @@ The virtual potential temperature $\theta_v$ is analyzed to classify cases where
 	\setcaptiontype{figure}
 	\centering
 	\subfloat{\includegraphics[width=0.6\linewidth]{images/coupling_no_coupling}}
-	\caption{\small Coupling / decoupling classification based on $\theta_v$ and location of maximum water vapour transport.}
+	\caption{\small Coupling / decoupling classification criteria based on $\theta_v$ and location of maximum water vapour transport.}
 	\label{fig:cop-dec}
 \end{minipage}
 
 
 \colouredcircle Skin temperature is estimated considering SIC values:
-\[
+\begin{equation}
 	T_{skin}(sic, T_s) = SST - SIC\times(SST~-~T_s)
-\]
+	\label{eq:Tskin}
+\end{equation}
 with $SST$ being sea surface temperature (assumed as 271.34~K), SIC from $0\dots1$, and $T_s$ the surface temperature derived from observations as:
 \[
 	T_s = \Big[ \frac{F_{lw}^{\downarrow} - (1-\varepsilon_s)F_{lw}^{\uparrow}}{\varepsilon_s~\sigma} \Big]^{\frac{1}{4}}
 \]
-being $F_{lw}^{\downarrow}$ and $F_{lw}^{\uparrow}$ down- and up-welling longwave fluxes measured at NSA. The surface LW emissivity $\varepsilon_s$ is considered 0.981 $\pm$ 5\% to cover characteristic NSA winter values.\\
- 
-{The results are sorted based on the cloud-sea ice coupled/decoupled conditions. Statistics of LW net surface radiation and cloud radiative effects (CRE) are show in Section 3.}
+being $F_{lw}^{\downarrow}$ and $F_{lw}^{\uparrow}$ down- and up-welling measured LW fluxes. The surface LW emissivity $\varepsilon_s$ is assumed 0.981$\pm$5\% to cover characteristic NSA winter values.
+\begin{equation}
+	\Delta T~=~T_{skin}(sic, T_s)~-~T_{2m}
+	\label{eq:deltaT}
+\end{equation}
+Here $\Delta T$ in Eq.~\ref{eq:deltaT} is used as proxy for SIC dependent sensible heat flux between the interface sea ice surface-atmosphere. %Results are sorted by the cloud-sea ice coupled/decoupled conditions. Statistics of LW net surface radiation and cloud radiative effects (CRE) are shown as a function of cloud water content and SIC.
 
 } % end of box
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{3.- Results for coupled and decoupled cases}{name=results,column=1,row=0,span=2}{
+  \headerbox{3.- Results for cloud-sea ice coupled and decoupled conditions}{name=results,column=1,row=0,span=2}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\Large Surface longwave radiation fluxes observed at NSA are shown as function of several variables under the influence of sea ice conditions, e.g. liquid and ice water path (LWP, IWP), skin temperature based on SIC, and cloud radiating temperature:}\\
 \vspace{+4.0em}
