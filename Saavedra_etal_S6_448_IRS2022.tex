@@ -298,7 +298,7 @@ Here $\Delta T$ in Eq.~\ref{eq:deltaT} is used as proxy for SIC dependent sensib
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{3.- Results for cloud-sea ice coupled and decoupled conditions}{name=results,column=1,row=0,span=2}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\Large Surface longwave radiation fluxes observed at NSA are shown as function of several variables under the influence of sea ice conditions, e.g. liquid and ice water path (LWP, IWP), skin temperature based on SIC, and cloud radiating temperature:}\\
+{\Large Surface longwave radiation fluxes observed at NSA are shown as function of several variables under the influence of sea ice conditions, e.g. liquid and ice water path (LWP, IWP), skin temperature based on SIC, and cloud radiating temperature (CRT):}\\
 \vspace{+4.0em}
 \begin{tabular}{c|c} %{@{}lcr@{}}
 	\multicolumn{2}{l}{\vspace{+1em}\colouredcircle {\large Distributions for Net LW radiation $F_{lw}^{net}$ versus Liquid water path\hfill}} \\
@@ -332,45 +332,15 @@ Here $\Delta T$ in Eq.~\ref{eq:deltaT} is used as proxy for SIC dependent sensib
 \end{tabular}\\
 
 \begin{minipage}{0.99\linewidth}
-	\subcaption{figure}
-	\subfloat[sub-caption]{\includegraphics[width=.93\linewidth]{CRE_lw_dw.png}}
-	\hfill
-	\subfloat[sub-caption]{\includegraphics[width=.93\linewidth]{cloud_radiating_T.png}}
-	\hfill
-	\subfloat[sub-caption]{\includegraphics[width=.93\linewidth]{Fnet_vs_IWP_both.png}}
+	\setcaptiontype{figure}
+	\centering
+	\subfloat[a]{\includegraphics[width=.3\linewidth]{CRE_lw_dw.png}}\hfill
+	\subfloat[b]{\includegraphics[width=.3\linewidth]{cloud_radiating_T.png}}\hfill
+	\subfloat[c]{\includegraphics[width=.3\linewidth]{Fnet_vs_IWP_both.png}}
+	\caption{[a] PDF for CRE ($F_{lw}^\downarrow$ cloudy - clear sky) shows a more frequent occurrence for cases when the clouds are coupled. [b] CRT estimated from clear-sky LW ($LW_c$), fractional sky cover ($LW_c$), indicating that warmer clouds are more frequent for coupled cases. [c] LW net radiation as a function of observed ice water path (IWP), where coupled $F_{lw}^{net}$ slightly decreasing when IWP approaches zero, contrasting to LWP where $F_{lw}^{net}$ drops strongly.}
 \end{minipage}
-\begin{tabular}{@{}lcr@{}}
-	\multicolumn{3}{l}{\vspace{+1em}\colouredcircle {\large Cloud Radiative Effect (CRE) for LW downwelling radiation \hfill}} \\
-	\begin{minipage}{0.31\linewidth}
-		\begin{center}             
-			\includegraphics[width=.93\linewidth]{CRE_lw_dw.png}
-		\end{center}
-	\end{minipage} &
-\begin{minipage}{0.31\linewidth}
-	\begin{center}             
-		\includegraphics[width=.93\linewidth]{cloud_radiating_T.png}
-	\end{center}
-\end{minipage} &
-\begin{minipage}{0.31\linewidth}
-	\begin{center}             
-		\includegraphics[width=.93\linewidth]{Fnet_vs_IWP_both.png}
-	\end{center}
-\end{minipage} \\
-	\begin{minipage}{0.3\linewidth}
-		PDF for CRE (cloudy - clear sky) for LW downwelling radiation shows a more frequent occurrence for cases when the clouds are coupled.
-	\end{minipage} 
-	&
-	\begin{minipage}{0.3\linewidth}
-		Cloud radiating temperature estimated from clear-sky LW ($LW_c$), fractional sky cover ($LW_c$), indicating similarly that warmer clouds are more frequent for coupled cases.
-	\end{minipage}
-	&
-	\begin{minipage}{0.3\linewidth}
-		LW net radiation as a function of observed ice water path (IWP).
-	\end{minipage}
-	\\		
-\end{tabular}
 
-CRE is calculated based on cloudy observations and corresponding clear-sky simulations following Long and Gaustad (2004) for shortwave radiation, and Brutsaert (1975) for longwave downwelling radiation. Clear sky calculation is a state-of-the-art value added product from ARM.
+CRE is calculated based on cloudy observations and corresponding clear-sky simulations following Brutsaert (1975) and Long and Turner (2008) for longwave downwelling radiation. Clear sky calculation is a state-of-the-art value added product from ARM.
    
 %\parbox[l]{0.8\linewidth}{   \vspace{-.5em}
 %	{Some text here....}    
@@ -397,6 +367,13 @@ So far only simulation of clear-sky for longwave downwelling radiation have been
 \begin{minipage}{0.99\linewidth}
 {\scriptsize
 	\begin{enumerate}
+		\item Shupe, M. D. et al. "Deriving Arctic Cloud Microphysics at Barrow, Alaska: Algorithms, Results, and Radiative Closure". J. Appl. Met. and Clim. 54, 1675–1689 (2015).
+		\item Ebell, K., et al. "Radiative Effect of Clouds at Ny-Ålesund, Svalbard, as Inferred from Ground-Based Remote Sensing Observations". J. Appl. Met. and Clim. 59, 3–22 (2020).
+		\item Thakur, G., Schymanski, S. J., Mallick, K., Trebs, I. & Sulis, M. Downwelling longwave radiation and sensible heat flux observations are critical for surface temperature and emissivity estimation from flux tower data. Sci Rep 12, 8592 (2022).
+		\item Brutsaert, W. "On a derivable formula for longwave radiation from clear skies". Water Res. Resch. 11(3): 742-744 (1975)
+		\item Long, CN. and Turner, DD. "A method for continuous estimation of clear sky downwelling longwave flux developed using ARM surface measurements". J. Geo. Res. Atmos. 113(D18): D18206. (2008)
+		\item Riihimaki, L. D., Gaustad, et al. "Radiative Flux Analysis (RADFLUXANAL) Value-Added Product: Retrieval of Clear-Sky Broadband Radiative Fluxes and Other Derived Values". DOE/SC-ARM-TR-228, 1569477 (2019) doi:10.2172/1569477.
+		
 		\item Inverse Methods for Atmospheric Sounding. Rodgers C.D. 2015. https://doi.org/10.1142/3171.
 		\item \vspace{-0.6em} Bayesian Analysis in Inverse Problems, Fitzpatrick B.G. 1991. Inverse Problems 7, 675-702.
 		\item \vspace{-0.6em} Instrument Operation \& Software guide, Issure 01/09, 2014. Radiometer Physics GmbH.
