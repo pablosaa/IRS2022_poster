@@ -353,9 +353,9 @@ CRE is calculated based on cloudy observations and corresponding clear-sky simul
 {\small
 \begin{itemize}
 		\item Ground-based radiation observations at the ARM site at the North Slope of Alaska (NSA) have been analyzed for the period of winters 2012 to 2020. The data has been classified into sea ice - cloud coupled/ decoupled cases.
-		\item Results are consistent with previous findings regarding the effect of low sea ice concentration (e.g., due to the presence of leads or polynyas) on cloud micro- and macro-physical properties.
+		\item Results are consistent with previous findings regarding the effect of low sea ice concentration (e.g., due to the presence of leads or polynyas) on cloud micro- and macro-physical properties~[\ref{bib:garfias2021}].
 		\item Cloud properties like liquid and ice water path (LWP and IWP), cloud base height, and cloud geometrical thickness are also variables strongly influencing the surface radiation budget.
-		\item Our results depict that a warming cloud effect on the surface is clearly enhanced by atmospheric thermodynamic and dynamic conditions which are coupled with the sea ice situation downwind.
+		\item Our results depict a warming cloud effect on the surface is clearly enhanced by atmospheric thermodynamic and dynamic conditions which yiel coupling with the sea ice situation downwind.
 \end{itemize}
 
 So far only simulation of clear-sky for longwave downwelling radiation have been considered, in the future we will include complete clear-sky simulations following~[\ref{bib:ebell2020}] for the central Arctic site Ny~Alesund, thus a better picture on CRE will be achieved.
@@ -371,7 +371,7 @@ So far only simulation of clear-sky for longwave downwelling radiation have been
 \begin{minipage}{0.99\linewidth}
 {\scriptsize
 	\begin{enumerate}
-		\setlength\itemsep{0.3em}
+		\setlength\itemsep{0.08em}
 		\item \label{bib:shupe2015}Shupe, M. D. et al. "Deriving Arctic Cloud Microphysics at Barrow, Alaska: Algorithms, Results, and Radiative Closure". J. Appl. Met. and Clim. 54, 1675–1689 (2015).
 		\item \label{bib:ebell2020}Ebell, K., et al. "Radiative Effect of Clouds at Ny-Ålesund, Svalbard, as Inferred from Ground-Based Remote Sensing Observations". J. Appl. Met. and Clim. 59, 3–22 (2020).
 		\item \label{bib:thakur2022}Thakur, G., Schymanski, S. J., Mallick, K., Trebs, I. & Sulis, M. Downwelling longwave radiation and sensible heat flux observations are critical for surface temperature and emissivity estimation from flux tower data. Sci Rep 12, 8592 (2022).
@@ -379,6 +379,7 @@ So far only simulation of clear-sky for longwave downwelling radiation have been
 		\item \label{bib:long2008}Long, CN. and Turner, DD. "A method for continuous estimation of clear sky downwelling longwave flux developed using ARM surface measurements". J. Geo. Res. Atmos. 113(D18): D18206. (2008)
 		\item \label{bib:riihimaki2019}Riihimaki, L. D., Gaustad, et al. "Radiative Flux Analysis (RADFLUXANAL) Value-Added Product: Retrieval of Clear-Sky Broadband Radiative Fluxes and Other Derived Values". DOE/SC-ARM-TR-228, 1569477 (2019) doi:10.2172/1569477.
 		\item \label{bib:dolinar2016}Dolinar, E. K., et al. "A clear-sky radiation closure study using a one-dimensional radiative transfer model and collocated satellite-surface-reanalysis data sets". J. Geophys. Res. Atmos. 121, 13,698-13,714 (2016).
+		\item \label{bib:garfias2021}Saavedra~Garfias, P. et al. "Climatology of clouds containing supercooled liquid in the Western and Central Arctic". American Geophysical Union 2021, ESSOAR. DOI10.1002/essoar.10509918.1
 		
 	\end{enumerate}
 }	
@@ -390,10 +391,13 @@ So far only simulation of clear-sky for longwave downwelling radiation have been
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Acknowledges}{name=acknown,column=0, span=2, above=bottom}{
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	{\small This work was supported by the DFG funded Transregio-project TR-172 "Arctic Amplification $(AC)^3$". The authors thanks the DOE ARM program for providing data from the NSA site. SIC data obtained from University of Bremen repository and supported by Dr. Gunnar Spreen. Cloud classification was performed by the open-source \emph{Cloudnetpy} algorithm by ACTRIS and FMI. }
+	{\smaller This work is supported by the DFG funded Transregio-project TR-172 "Arctic Amplification $(AC)^3$". Authors thank to DOE ARM program for providing NSA data. SIC product is obtained from the University of Bremen under supported by Dr. Gunnar Spreen. Cloud classification performed with open-source \emph{Cloudnetpy} by ACTRIS and FMI.
+	}{\large \textbf Gedruckt im Universitätsrechenzentrum Leipzig}
 }
-\headerbox{Contact: pablosaa@uni-leipzig.de}{name=contact, column=3, above=bottom}{
-
+\headerbox{[*] Contact}{name=contact, column=2, above=bottom}{
+{\Large Email:	pablo.saavedra@uni-leipzig.de}\\
+\hspace{3em}\includegraphics[scale=0.04]{github_pablosaa.png}\hspace{3em}
+\includegraphics[scale=0.16]{twitter_DunkleWolke.png}
 }
 
 \end{poster}
