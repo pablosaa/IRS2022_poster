@@ -1,4 +1,4 @@
-\documentclass[portrate,paperwidth=841mm,paperheight=1189mm,fontscale=0.4,margin=1cm]{baposter}
+\documentclass[portrate,a0paper,fontscale=0.4,margin=1cm]{baposter}
 %\documentclass[landscape,paperwidth=1682mm,paperheight=1189mm,fontscale=0.4,margin=3cm]{baposter}
 
 \usepackage{calc}
@@ -235,13 +235,13 @@ The study focuses on the Western Arctic to address the following research questi
 	{\small The Atmospheric Radiation Measurement’s (ARM) North Slope of Alaska (NSA) site (71.23$^\circ$ North, 156.61$^\circ$ West) in Utqiagvik, Alaska.}
 	\end{minipage}
 	&
-	\includegraphics[scale=0.5]{NSA_SIC_100km.png}	
+	\includegraphics[scale=0.55]{NSA_SIC_100km.png}	
 \end{tabular*}
 \\
 NSA provides long-term high-quality observations for clouds and radiation. To exclude solar shortwave radiative effects this study is centered on Arctic winters (Nov. to Mar.) from 2012 to 2020. 	
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{2.- Coupling Sea Ice and Clouds}{name=retmethods,column=0,below=objective}{
+\headerbox{2.- Coupling Sea Ice and Clouds}{name=methods,column=0,below=objective}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\hspace{-2em}
 Daily sea ice concentration (SIC) is primarily obtained from satellite retrievals provided by the University of Bremen [1], the following analysis is performed to couple sea ice conditions with cloud observations above NSA:
@@ -260,19 +260,19 @@ Gradient of water vapour transport ($\nabla_z WVT$) is calculated from humidity 
 \begin{minipage}{0.9\textwidth}
 	\setcaptiontype{figure}
 	\centering
-	\subfloat{\includegraphics[width=.6\linewidth]{drawing_lead_cloud.png}}
-	\caption{\small Schematic for sea ice interaction with observed clouds.}
+	\subfloat{\includegraphics[width=.7\linewidth]{drawing_lead_cloud.png}}
+	\caption{\smaller Sea ice interaction with observed clouds. Adapted from [\ref{bib:jannos2022}]}
 	\label{fig:leadcloud}
-\end{minipage}
+\end{minipage}\\
 
 The virtual potential temperature $\theta_v$ is analyzed to classify cases where the WVT is coupled or decoupled to the cloud.
 
-\colouredcircle Cloud observation classification:\\
+\colouredcircle Cloud coupling classification: criteria based on $\theta_v$ and location of maximum water vapour transport\\
 \begin{minipage}{0.9\textwidth}
 	\setcaptiontype{figure}
 	\centering
-	\subfloat{\includegraphics[width=0.6\linewidth]{images/coupling_no_coupling}}
-	\caption{\small Coupling / decoupling classification criteria based on $\theta_v$ and location of maximum water vapour transport.}
+	\subfloat{\includegraphics[width=0.6\linewidth]{images/coupling_no_coupling_bigfont}}
+	%\caption{\smaller Coupling / decoupling .}
 	\label{fig:cop-dec}
 \end{minipage}
 
@@ -338,7 +338,7 @@ Here $\Delta T$ in Eq.~\ref{eq:deltaT} is used as proxy for SIC dependent sensib
 	\subfloat[b]{\includegraphics[width=.3\linewidth]{cloud_radiating_T.png}}\hfill
 	\subfloat[c]{\includegraphics[width=.3\linewidth]{Fnet_vs_IWP_both.png}}
 	\caption{[a] PDF for CRE ($F_{lw}^\downarrow$ cloudy - clear sky) shows a more frequent occurrence for cases when the clouds are coupled. [b] CRT estimated from clear-sky LW ($LW_c$), fractional sky cover ($LW_c$), indicating that warmer clouds are more frequent for coupled cases. [c] LW net radiation as a function of observed ice water path (IWP), where coupled $F_{lw}^{net}$ slightly decreasing when IWP approaches zero, contrasting to LWP where $F_{lw}^{net}$ drops strongly.}
-\end{minipage}
+\end{minipage}\\
 
 CRE is calculated based on cloudy observations and corresponding clear-sky simulations following [\ref{bib:bruts1975}] and [\ref{bib:long2008}] for longwave downwelling radiation. Clear sky calculation is a state-of-the-art value added product from ARM~[\ref{bib:riihimaki2019}].
    
@@ -350,7 +350,7 @@ CRE is calculated based on cloudy observations and corresponding clear-sky simul
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{4.- Conclusions}{name=conclutions,column=1,span=2,below=results}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\small
+{\Small
 \begin{itemize}
 		\item Ground-based radiation observations at the ARM site at the North Slope of Alaska (NSA) have been analyzed for the period of winters 2012 to 2020. The data has been classified into sea ice - cloud coupled/ decoupled cases.
 		\item Results are consistent with previous findings regarding the effect of low sea ice concentration (e.g., due to the presence of leads or polynyas) on cloud micro- and macro-physical properties~[\ref{bib:garfias2021}].
@@ -369,7 +369,7 @@ So far only simulation of clear-sky for longwave downwelling radiation have been
 %\colouredcircle \hspace{2em}
 \hspace{-2.4em}
 \begin{minipage}{0.99\linewidth}
-{\scriptsize
+{\tiny
 	\begin{enumerate}
 		\setlength\itemsep{0.08em}
 		\item \label{bib:shupe2015}Shupe, M. D. et al. "Deriving Arctic Cloud Microphysics at Barrow, Alaska: Algorithms, Results, and Radiative Closure". J. Appl. Met. and Clim. 54, 1675–1689 (2015).
@@ -379,8 +379,8 @@ So far only simulation of clear-sky for longwave downwelling radiation have been
 		\item \label{bib:long2008}Long, CN. and Turner, DD. "A method for continuous estimation of clear sky downwelling longwave flux developed using ARM surface measurements". J. Geo. Res. Atmos. 113(D18): D18206. (2008)
 		\item \label{bib:riihimaki2019}Riihimaki, L. D., Gaustad, et al. "Radiative Flux Analysis (RADFLUXANAL) Value-Added Product: Retrieval of Clear-Sky Broadband Radiative Fluxes and Other Derived Values". DOE/SC-ARM-TR-228, 1569477 (2019) doi:10.2172/1569477.
 		\item \label{bib:dolinar2016}Dolinar, E. K., et al. "A clear-sky radiation closure study using a one-dimensional radiative transfer model and collocated satellite-surface-reanalysis data sets". J. Geophys. Res. Atmos. 121, 13,698-13,714 (2016).
-		\item \label{bib:garfias2021}Saavedra~Garfias, P. et al. "Climatology of clouds containing supercooled liquid in the Western and Central Arctic". American Geophysical Union 2021, ESSOAR. DOI10.1002/essoar.10509918.1
-		
+		\item \label{bib:garfias2021}Saavedra~Garfias, P. et al. "Climatology of clouds containing supercooled liquid in the Western and Central Arctic". American Geophysical Union (2021), ESSOAR. DOI10.1002/essoar.10509918.1
+		\item \label{bib:jannos2022}Michaelis J, Lüpkes C. "The Impact of Lead Patterns on Mean Profiles of Wind, Temperature, and Turbulent Fluxes in the Atmospheric Boundary Layer over Sea Ice". Atmosphere. (2022) https://doi.org/10.3390/atmos13010148 
 	\end{enumerate}
 }	
 \vspace{-0.6em}
@@ -389,7 +389,7 @@ So far only simulation of clear-sky for longwave downwelling radiation have been
 	%\vspace{0.5em}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Acknowledges}{name=acknown,column=0, span=2, above=bottom}{
+\headerbox{Acknowledges}{name=acknown,column=0, span=2, below=methods}{
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	{\smaller This work is supported by the DFG funded Transregio-project TR-172 "Arctic Amplification $(AC)^3$". Authors thank to DOE ARM program for providing NSA data. SIC product is obtained from the University of Bremen under supported by Dr. Gunnar Spreen. Cloud classification performed with open-source \emph{Cloudnetpy} by ACTRIS and FMI.
 	}{\large \textbf Gedruckt im Universitätsrechenzentrum Leipzig}
